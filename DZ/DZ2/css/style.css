@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 1px;
+}
+
+@font-face {
+  font-family: "Devroye";
+  src: url("../font/DEVROYE_.ttf");
+}
+
+body {
+  background: linear-gradient(90deg, rgba(138, 221, 238, 1) 0%, rgba(194, 104, 232, 1) 100%);
+  font-family: 'Devroye', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu :hover {
+  color: rgb(4, 52, 142);
+}
+
+.menu:active {
+  font-weight: 600;
+}
+
+.menu-item a {
+  color: rgb(19, 95, 238);
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+
+.header-h1 {
+  color: #531212;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.txt {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #46424e
+}
+
+.header-h2 {
+  color: coral;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 80px;
+}
+
+.form-input {
+  width: 200px;
+  height: 30px;
+  /* outline: 1px solid aquamarine; */
+  border: 1px solid #797474;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 2px;
+  vertical-align: 1px;
+}
+
+.butn {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 5px;
+  vertical-align: 5px;
+}
+
+.card {
+  background-color: rgb(40, 150, 114);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

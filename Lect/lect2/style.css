@@ -1,0 +1,36 @@
+h2 {
+  color: blue;
+}
+
+body {
+  background: rgb(172, 227, 172);
+}
+
+p {
+  color: brown;
+  width: auto;
+  border: 1px solid blue;
+  background: rgb(77, 153, 77)
+}
+
+#first {
+  background: rgb(131, 137, 205);
+  width: auto;
+}
+
+.border {
+  border: 1px solid black;
+  border-bottom: 2px groove red;
+}
+
+.title {
+  background-color: gray;
+}
+
+.heading {
+  color: rgb(207, 59, 170);
+}
+
+.heading-about {
+  color: orange;
+}
