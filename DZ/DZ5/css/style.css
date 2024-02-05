@@ -264,6 +264,7 @@ body {
   /* outline: 2px solid red; */
   display: flex;
   gap: 61px;
+  flex-wrap: wrap;
 }
 
 .feat_card {
@@ -344,18 +345,18 @@ body {
   padding: 100px 0;
   width: 100%;
   /* outline: 2px solid red; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center; */
 }
 
 .serv_cont {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   gap: 24px;
   padding: 0 0 48px 0;
+  justify-content: center;
 }
 
 .serv_title {
@@ -373,12 +374,14 @@ body {
   font-weight: 400;
   line-height: 140%;
   max-width: 740px;
+  /* text-align: center; */
 }
 
 .serv_items {
   /* outline: 2px solid rgb(8, 234, 57); */
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .serv_card {
