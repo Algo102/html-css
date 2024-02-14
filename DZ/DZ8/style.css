@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+section {
+  margin: 15px auto;
+  max-width: 320px;
+  background-color: #c6d6dc;
+  padding: 20px 0 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  max-width: 298px;
+  font-weight: bold;
+  display: block;
+}
+
+input,
+button {
+  margin-bottom: 8px;
+  width: calc(100% - 22px);
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 29px;
+}
+
+.check_inp {
+  display: none;
+}
+
+.check {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.check .fas.fa-check-square {
+  color: #908c8c;
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+}
+
+.check_inp:checked+.fas.fa-check-square {
+  color: #007bff;
+}
+
+.check span {
+  margin-left: 25px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
