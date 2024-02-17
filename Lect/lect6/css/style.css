@@ -1,3 +1,64 @@
+@keyframes bounce-top {
+  0% {
+    /* -webkit-transform: translateY(-30px); */
+    transform: translateY(-30px);
+    /* -webkit-animation-timing-function: ease-in; */
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    /* -webkit-transform: translateY(-24px); */
+    transform: translateY(-24px);
+    /* -webkit-animation-timing-function: ease-in; */
+    animation-timing-function: ease-in;
+  }
+
+  65% {
+    /* -webkit-transform: translateY(-12px); */
+    transform: translateY(-12px);
+    /* -webkit-animation-timing-function: ease-in; */
+    animation-timing-function: ease-in;
+  }
+
+  82% {
+    /* -webkit-transform: translateY(-6px); */
+    transform: translateY(-6px);
+    /* -webkit-animation-timing-function: ease-in; */
+    animation-timing-function: ease-in;
+  }
+
+  93% {
+    /* -webkit-transform: translateY(-4px); */
+    transform: translateY(-4px);
+    /* -webkit-animation-timing-function: ease-in; */
+    animation-timing-function: ease-in;
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    /* -webkit-transform: translateY(0px); */
+    transform: translateY(0px);
+    /* -webkit-animation-timing-function: ease-out; */
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    /* -webkit-transform: translateY(0px); */
+    transform: translateY(0px);
+    /* -webkit-animation-timing-function: ease-out; */
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -79,6 +140,26 @@ body {
   line-height: normal;
 }
 
+.button {
+  margin-top: 20px;
+  display: block;
+  width: 190px;
+  height: 60px;
+  border: 1px solid purple;
+  text-align: center;
+  line-height: 60px;
+  color: purple;
+  font-size: 20px;
+  transition: all 0.3s;
+  animation: bounce-top 0.9s 3s 3 both;
+}
+
+.button:hover {
+  color: white;
+  background-color: purple;
+  transition: all 2s;
+}
+
 .about {
   background: rgba(242, 242, 242, 0.34);
   padding-top: 64px;
@@ -124,6 +205,83 @@ body {
 .twit:hover path {
   fill: rgb(138, 5, 239);
 }
+
+.drive {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.drive:hover .car {
+  margin-left: 1000px;
+}
+
+.car {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #000;
+  transition: margin 3s;
+}
+
+.car-1 {
+  transition-timing-function: ease;
+}
+
+.car-2 {
+  transition-timing-function: ease-in;
+}
+
+.car-3 {
+  transition-timing-function: ease-out;
+}
+
+.car-4 {
+  transition-timing-function: ease-in-out;
+}
+
+.car-5 {
+  transition-timing-function: linear;
+}
+
+.bord {
+  margin: 40px 0;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bord__items {
+  width: 200px;
+  height: 150px;
+  border: 1px solid blue;
+  transition: transform 0.6s;
+}
+
+.b_item1 {
+  transform: skew(0, -15deg);
+}
+
+.b_item1:hover {
+  transform: translate(202px, -30px) scale(1.4) rotate(-5deg);
+}
+
+.b_item2 {
+  margin: 0 0 54px 0;
+}
+
+.b_item2:hover {
+  transform: translateY(0) scale(1.4);
+}
+
+.b_item3 {
+  transform: skew(0, 15deg);
+}
+
+.b_item3:hover {
+  transform: translate(-202px, -30px) scale(1.4) rotate(5deg);
+}
+
+
 
 .content {
   display: grid;

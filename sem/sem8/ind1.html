@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 40px;
+      background-color: aliceblue;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .lab-check {
+      position: relative;
+    }
+
+    .lab-check::before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      border: 2px solid black;
+      position: absolute;
+      top: -1px;
+      left: -20px;
+
+    }
+
+    .inp-check:checked~label::before {
+      background-image: url('https://thecustomizewindows.cachefly.net/wp-content/uploads/2011/09/CSS-Tick-Marks-and-Wrong-Marks-How-To-Add-In-Easy-Steps.jpg');
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- пост не отображается в адресной строке в отличае о гет -->
+  <form action="#" method="post" oninput="res.value=(rang.value)">
+    <!-- в pattern="" можно задать шаблон -->
+    <div>
+      <label for="name-in">Имя</label>
+      <input id="name-in" type="text" placeholder="Иван" required autofocus>
+    </div>
+    <div>
+      <label>
+        Email
+        <input type="email" placeholder="ivan@mail.com">
+      </label>
+    </div>
+    <div>
+      <label for="pas-in">Пароль</label>
+      <input id="pas-in" type="password" placeholder="******" required>
+    </div>
+    <div>
+      <label for="age-in">Пароль</label>
+      <input id="age-in" type="number" placeholder="25" required min="14" max="65">
+    </div>
+    <div>
+      <label for="dat-in">Возраст</label>
+      <input id="dat-in" type="date" required>
+    </div>
+    <div>
+      <label for="tel-in">Телефон</label>
+      <input id="tel-in" type="tel" placeholder="8 900 000 00 00" required>
+    </div>
+
+    <!-- reset для JS -->
+    <div>
+      <input type="submit" value="Отправить">
+      <button type="reset">Очистить</button>
+    </div>
+
+    <div>
+      <label for="rang">Ползунок</label>
+      <input id="rang" type="range" value="4" step="0.5" min="0" max="10">
+      Значение
+      <output name="res" for="range">4</output>
+    </div>
+
+    <div>
+      <input class="inp-check" id="check" type="checkbox" required>
+      <label class="lab-check" for="check">Согласен</label>
+    </div>
+
+
+  </form>
+
+</body>
+
+</html>
