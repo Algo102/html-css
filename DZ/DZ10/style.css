@@ -1,0 +1,11 @@
+.carousel-control-next-icon {
+  background-image: url(./img/r.png);
+}
+
+.carousel-control-prev-icon {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(90%) saturate(5491%) hue-rotate(3deg) brightness(86%) contrast(131%);
+}
+
+.rounded-circle {
+  border-radius: 31% !important;
+}

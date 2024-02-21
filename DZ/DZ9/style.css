@@ -89,17 +89,25 @@ a {
 
 }
 
+.product__img::before, .product__img::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  color: white;
+  border-radius: 50%;
+}
+
 .product__img::before {
   content: "New";
-  position: absolute;
   top: 0;
   right: 0;
   /* border: 1px solid blue; */
-  /* width: 35px;
-  height: 35px; */
-  padding: 7px;
+  /* padding: 7px; */
   background-color: red;
-  color: white;
+
 }
 
 .product__img::after {
@@ -108,11 +116,8 @@ a {
   top: 0;
   left: 0;
   /* border: 1px solid blue; */
-  /* width: 35px;
-  height: 35px; */
-  padding: 7px;
+  /* padding: 7px; */
   background-color: orange;
-  color: white;
 }
 
 .svg-tw {
